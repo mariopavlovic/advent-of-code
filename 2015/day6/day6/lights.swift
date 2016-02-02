@@ -302,16 +302,17 @@ let input: String = "turn on 887,9 through 959,629\n" +
 "turn on 522,730 through 968,950\n" +
 "turn off 102,229 through 674,529"
 
-var lights: [Int] = Array(count: 1000*1000, repeatedValue: 0)
+private var lights: [Int] = Array(count: 1000*1000, repeatedValue: 0)
+private var brightness: [Int] = Array(count: 1000*1000, repeatedValue: 0)
 
-enum Action {
+private enum Action {
     case None
     case TurnOn
     case TurnOff
     case Toggle
 }
 
-struct Instruction {
+private struct Instruction {
     let startPoint: CGPoint
     let endPoint: CGPoint
     let action: Action
@@ -358,10 +359,17 @@ private func performAction(action: Action, index: Int) {
     switch action {
     case .TurnOn:
         lights[index] = 1
+        brightness[index] += 1
     case .TurnOff:
         lights[index] = 0
+        
+        //brightness can't be less then 0
+        if (brightness[index]) > 0 {
+            brightness[index] -= 1
+        }
     case .Toggle:
         lights[index] = (lights[index] + 1) % 2
+        brightness[index] += 2
     case .None:
         print("Reached .None case")
     }
@@ -377,9 +385,9 @@ private func performInstructions(instructions :[Instruction]) {
     }
 }
 
-private func countLitLights() -> Int {
+private func sumElements(source: [Int]) -> Int {
     //"+" is short for "$0 + $1"
-    return lights.reduce(0, combine: +)
+    return source.reduce(0, combine: +)
 }
 
 public func numberOfLitLights() -> Int {
@@ -390,10 +398,10 @@ public func numberOfLitLights() -> Int {
         return Instruction.init(start: data.start, end: data.end, input: data.action)
     }
     
-    
     performInstructions(instructions)
-    let result = countLitLights()
+    let numLitLights = sumElements(lights)
+    let combinedBrightness = sumElements(brightness.filter{ $0 > 0 })
     
-    print("there are \(result) lit lights")
-    return result
+    print("there are \(numLitLights) lit lights, with combined brightness of \(combinedBrightness)")
+    return numLitLights
 }
