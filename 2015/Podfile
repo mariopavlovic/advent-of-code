@@ -1,0 +1,10 @@
+use_frameworks!
+
+def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+end
+
+target 'advent-of-codeTests' do
+    testing_pods
+end
