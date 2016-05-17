@@ -13,7 +13,6 @@
 		A02907181CE48C880060823C /* day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02907171CE48C880060823C /* day6.swift */; };
 		A029071A1CE496670060823C /* day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02907191CE496670060823C /* day7.swift */; };
 		A029071C1CE496900060823C /* Day7Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029071B1CE496900060823C /* Day7Specs.swift */; };
-		A029071D1CE497120060823C /* day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02907191CE496670060823C /* day7.swift */; };
 		A02907221CE49A610060823C /* day7.txt in Resources */ = {isa = PBXBuildFile; fileRef = A02907211CE49A610060823C /* day7.txt */; };
 /* End PBXBuildFile section */
 
@@ -302,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A029071D1CE497120060823C /* day7.swift in Sources */,
 				A029071C1CE496900060823C /* Day7Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
