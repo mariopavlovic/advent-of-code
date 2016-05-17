@@ -34,7 +34,6 @@
 		A02906DC1CE487D80060823C /* day2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = day2.playground; sourceTree = "<group>"; };
 		A02906DD1CE487D80060823C /* day3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = day3.playground; sourceTree = "<group>"; };
 		A02906DE1CE487D80060823C /* day5.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = day5.playground; sourceTree = "<group>"; };
-		A02906DF1CE487D80060823C /* day7.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = day7.playground; sourceTree = "<group>"; };
 		A02906E21CE488280060823C /* advent-of-code-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "advent-of-code-Bridging-Header.h"; sourceTree = "<group>"; };
 		A02906E31CE488290060823C /* day4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = day4.swift; sourceTree = "<group>"; };
 		A02907151CE48A6D0060823C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,7 +121,6 @@
 				A02906E31CE488290060823C /* day4.swift */,
 				A02906DE1CE487D80060823C /* day5.playground */,
 				A02907171CE48C880060823C /* day6.swift */,
-				A02906DF1CE487D80060823C /* day7.playground */,
 				A02907191CE496670060823C /* day7.swift */,
 				A053F8041CE4860900CBE216 /* Info.plist */,
 				A02906E21CE488280060823C /* advent-of-code-Bridging-Header.h */,
