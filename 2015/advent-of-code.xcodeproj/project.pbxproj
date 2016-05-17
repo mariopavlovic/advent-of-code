@@ -14,6 +14,7 @@
 		A029071A1CE496670060823C /* day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02907191CE496670060823C /* day7.swift */; };
 		A029071C1CE496900060823C /* Day7Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A029071B1CE496900060823C /* Day7Specs.swift */; };
 		A02907221CE49A610060823C /* day7.txt in Resources */ = {isa = PBXBuildFile; fileRef = A02907211CE49A610060823C /* day7.txt */; };
+		A09F84851CEB2A8100919A57 /* day7-part2.txt in Resources */ = {isa = PBXBuildFile; fileRef = A09F84841CEB2A8100919A57 /* day7-part2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		A053F8041CE4860900CBE216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A053F8091CE4860900CBE216 /* advent-of-codeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "advent-of-codeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A053F80F1CE4860900CBE216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09F84841CEB2A8100919A57 /* day7-part2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "day7-part2.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		A02907201CE49A230060823C /* inputs */ = {
 			isa = PBXGroup;
 			children = (
+				A09F84841CEB2A8100919A57 /* day7-part2.txt */,
 				A02907211CE49A610060823C /* day7.txt */,
 			);
 			path = inputs;
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02907221CE49A610060823C /* day7.txt in Resources */,
+				A09F84851CEB2A8100919A57 /* day7-part2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

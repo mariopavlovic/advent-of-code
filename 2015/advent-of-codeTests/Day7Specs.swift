@@ -128,10 +128,16 @@ class Day7Specs: QuickSpec {
                     expect(y).to(equal(456))
                 })
                 
-                it("should find a solution for day 7 tasks", closure: { 
+                it("should find a solution for day 7 tasks - part 1", closure: {
                     let result = sut.runCircut(resultOnWire: "a", filePath: "day7")
                     expect(result).to(equal(16076))
                 })
+                
+                it("should find a solution for day 7 tasks - part 2", closure: {
+                    let result = sut.runCircut(resultOnWire: "a", filePath: "day7-part2")
+                    expect(result).to(equal(2797))
+                })
+
             })
         }
     }
